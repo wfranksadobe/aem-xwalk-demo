@@ -1,0 +1,121 @@
+/* Cards News - Tennis NSW */
+.cards-news > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (width >= 600px) {
+  .cards-news > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cards-news > ul > li {
+  background-color: var(--ta-white);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 56px;
+}
+
+.cards-news .cards-news-card-body {
+  padding: 14px 14px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cards-news .cards-news-card-body h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ta-dark-navy);
+}
+
+@media (width >= 900px) {
+  .cards-news .cards-news-card-body h3 {
+    font-size: 27px;
+    line-height: 27px;
+  }
+}
+
+.cards-news .cards-news-card-body p {
+  margin: 0 0 12px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--ta-dark-navy);
+}
+
+@media (width >= 900px) {
+  .cards-news .cards-news-card-body p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+/* "Read more" button - full-width dark navy bar at bottom */
+.cards-news .cards-news-card-body p:last-child {
+  margin: 0;
+  padding: 0;
+  border-top: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.cards-news .cards-news-card-body p:last-child a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background-color: var(--ta-dark-navy);
+  color: var(--ta-white);
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.cards-news .cards-news-card-body p:last-child a::after {
+  content: '\203A';
+  font-size: 24px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--ta-blue);
+  color: var(--ta-white);
+}
+
+.cards-news .cards-news-card-image {
+  line-height: 0;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.cards-news .cards-news-card-image p {
+  margin: 0;
+}
+
+.cards-news > ul > li img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Override tennis-blue section white text for card internals */
+.section.tennis-blue .cards-news .cards-news-card-body h3 {
+  color: var(--ta-dark-navy);
+}
+
+.section.tennis-blue .cards-news .cards-news-card-body p {
+  color: var(--ta-dark-navy);
+}

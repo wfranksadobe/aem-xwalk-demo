@@ -46,7 +46,10 @@
         "accordion",
         "button",
         "cards",
+        "cards-news",
+        "cards-section-nav",
         "carousel",
+        "carousel-hero-banner",
         "columns",
         "embed",
         "fragment",
@@ -57,6 +60,7 @@
         "search",
         "tabs",
         "table",
+        "table-tournament",
         "text",
         "title",
         "video"

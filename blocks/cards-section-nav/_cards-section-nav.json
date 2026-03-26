@@ -1,0 +1,28 @@
+{
+  "definitions": [
+    {
+      "title": "Cards Section Nav",
+      "id": "cards-section-nav",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Cards Section Nav",
+              "filter": "cards-section-nav"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [],
+  "filters": [
+    {
+      "id": "cards-section-nav",
+      "components": [
+        "card"
+      ]
+    }
+  ]
+}

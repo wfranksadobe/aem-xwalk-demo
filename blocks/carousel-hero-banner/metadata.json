@@ -1,0 +1,40 @@
+{
+  "variantName": "carousel-hero-banner",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-03-26T03:41:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.tennis.com.au/nsw/",
+    "originPage": "Tennis NSW homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "hero-banner",
+    "imagePattern": "large",
+    "structure": "full-width linked image slides"
+  },
+  "contentPattern": {
+    "structure": "image + link per slide",
+    "buttonCount": 0,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "homepage hero banners",
+      "full-width promotional image sliders",
+      "campaign banner rotations"
+    ],
+    "notSuitableFor": [
+      "text-heavy content carousels",
+      "testimonial sliders",
+      "product image galleries"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/nsw/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-26T03:41:00.000Z"
+  }
+}

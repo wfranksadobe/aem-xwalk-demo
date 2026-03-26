@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-news",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-03-26T03:41:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.tennis.com.au/nsw/",
+    "originPage": "Tennis NSW homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "news-cards",
+    "imagePattern": "large",
+    "structure": "3-col grid with image + title + excerpt + CTA"
+  },
+  "contentPattern": {
+    "structure": "image + heading + text + link per card",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "news article teasers",
+      "blog post grids",
+      "latest updates sections"
+    ],
+    "notSuitableFor": [
+      "product cards",
+      "team member cards",
+      "feature highlight cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/nsw/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-26T03:41:00.000Z"
+  }
+}

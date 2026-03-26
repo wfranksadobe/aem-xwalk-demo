@@ -1,0 +1,41 @@
+{
+  "variantName": "table-tournament",
+  "baseBlock": "table",
+  "version": "1.0.0",
+  "created": "2026-03-26T03:41:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.tennis.com.au/nsw/",
+    "originPage": "Tennis NSW homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "tournament-schedule",
+    "imagePattern": "noimg",
+    "structure": "6-column data table with header row"
+  },
+  "contentPattern": {
+    "structure": "header row + data rows with links",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "tournament schedules",
+      "event listings",
+      "competition tables",
+      "fixture data"
+    ],
+    "notSuitableFor": [
+      "pricing tables",
+      "comparison tables",
+      "feature matrices"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/nsw/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-26T03:41:00.000Z"
+  }
+}

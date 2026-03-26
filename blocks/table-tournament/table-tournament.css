@@ -1,0 +1,90 @@
+/* Table Tournament - Tennis NSW */
+.table-tournament.block {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-tournament.block table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  font-size: var(--body-font-size-xs);
+}
+
+@media (width >= 600px) {
+  .table-tournament.block table {
+    font-size: var(--body-font-size-s);
+  }
+}
+
+@media (width >= 900px) {
+  .table-tournament.block table {
+    font-size: var(--body-font-size-m);
+  }
+}
+
+.table-tournament.block table thead tr {
+  background-color: var(--ta-dark-navy);
+  color: var(--ta-white);
+  border: none;
+}
+
+.table-tournament.block table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table-tournament.block table tbody tr:hover {
+  background-color: #f5f8ff;
+}
+
+.table-tournament.block table th {
+  font-weight: 700;
+  font-size: var(--body-font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.table-tournament.block table th,
+.table-tournament.block table td {
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.table-tournament.block table td {
+  color: var(--ta-grey-text);
+  vertical-align: top;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.table-tournament.block table td a {
+  color: var(--ta-navy);
+  font-weight: 400;
+}
+
+.table-tournament table th p,
+.table-tournament table td p {
+  margin: 0;
+}
+
+.table-tournament table td p + p {
+  margin-top: 0.25em;
+  font-size: var(--body-font-size-xs);
+  color: var(--ta-grey-light);
+}
+
+/* no header variant */
+.table-tournament.block.no-header table tbody tr {
+  border-top: 1px solid #e0e0e0;
+}
+
+/* striped variant */
+.table-tournament.block.striped tbody tr:nth-child(odd) {
+  background-color: var(--light-color);
+}
+
+/* bordered variant */
+.table-tournament.block.bordered table th,
+.table-tournament.block.bordered table td {
+  border: 1px solid #e0e0e0;
+}

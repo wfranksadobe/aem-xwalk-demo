@@ -11,63 +11,61 @@
  */
 
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
-  --overlay-background-color:lightgrey;
+  /* Tennis NSW / Tennis Australia brand colors */
+  --background-color: #fff;
+  --light-color: #f5f5f5;
+  --dark-color: #001f3d;
+  --text-color: #6c6f6f;
+  --link-color: #004399;
+  --link-hover-color: #0059cc;
+  --overlay-background-color: rgb(0 0 0 / 80%);
+
+  /* Tennis Australia primary palette */
+  --ta-blue: #0a6dff;
+  --ta-navy: #004399;
+  --ta-dark-navy: #001f3d;
+  --ta-lime: #aef500;
+  --ta-white: #fff;
+  --ta-grey-text: #6c6f6f;
+  --ta-grey-heading: #6e6e6e;
+  --ta-grey-light: #bebfbf;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: lato, lato-fallback, arial, sans-serif;
+  --heading-font-family: lato, lato-fallback, arial, sans-serif;
 
   /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  --body-font-size-m: 16px;
+  --body-font-size-s: 14px;
+  --body-font-size-xs: 13px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  --heading-font-size-xxl: 48px;
+  --heading-font-size-xl: 40px;
+  --heading-font-size-l: 30px;
+  --heading-font-size-m: 24px;
+  --heading-font-size-s: 20px;
+  --heading-font-size-xs: 18px;
 
   /* nav heights */
-  --nav-height: 64px;
+  --nav-height: 90px;
   --breadcrumbs-height: 34px;
   --header-height: var(--nav-height);
 }
 
 /* fallback fonts */
 @font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
-}
-
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
+  font-family: lato-fallback;
+  size-adjust: 97.38%;
   src: local('Arial');
 }
 
 @media (width >= 900px) {
   :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
-
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
+    --heading-font-size-xxl: 48px;
+    --heading-font-size-xl: 40px;
+    --heading-font-size-l: 30px;
+    --heading-font-size-m: 24px;
     --heading-font-size-s: 20px;
     --heading-font-size-xs: 18px;
   }
@@ -80,7 +78,7 @@ body {
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  line-height: 1.1;
 }
 
 body.appear {
@@ -116,13 +114,15 @@ h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.25;
   scroll-margin: 40px;
+  color: var(--ta-grey-heading);
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
+/* stylelint-disable-next-line declaration-block-single-line-max-declarations */
+h2 { font-size: var(--heading-font-size-xl); color: var(--ta-blue); }
 h3 { font-size: var(--heading-font-size-l); }
 h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
@@ -182,16 +182,17 @@ button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border-radius: 0;
+  padding: 0.5em 1.5em;
   font-family: var(--body-font-family);
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: var(--ta-blue);
+  color: var(--ta-white);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -202,7 +203,7 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--ta-navy);
   cursor: pointer;
 }
 
@@ -263,4 +264,108 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+main .section.tennis-blue {
+  background-color: var(--ta-blue);
+  color: var(--ta-white);
+  margin: 0;
+  padding: 40px 0;
+}
+
+main .section.tennis-blue h2,
+main .section.tennis-blue h3 {
+  color: var(--ta-white);
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+main .section.tennis-blue p {
+  color: var(--ta-white);
+}
+
+main .section.tennis-blue a:any-link {
+  color: var(--ta-white);
+}
+
+/* Section-landing page intro content - centered heading and description */
+main .section.cards-section-nav-container > .default-content-wrapper {
+  text-align: center;
+}
+
+/* Hide metadata and section-metadata blocks (processed by EDS, not displayed) */
+main .metadata-container,
+main .section-metadata-container {
+  display: none;
+}
+
+/* Carousel hero banner section - remove section margins/padding */
+main .section.carousel-hero-banner-container {
+  margin: 0;
+  padding: 0;
+}
+
+main .section.carousel-hero-banner-container > div {
+  max-width: none;
+  padding: 0;
+}
+
+/* Partners section */
+main .section:last-of-type:not(.metadata-container) {
+  text-align: center;
+  background-color: var(--light-color);
+  padding: 40px 0;
+  margin: 0;
+}
+
+main .section:last-of-type:not(.metadata-container) h2 {
+  color: var(--ta-blue);
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: var(--heading-font-size-m);
+}
+
+main .section:last-of-type:not(.metadata-container) img {
+  max-width: 300px;
+}
+
+/* Tournament section heading - italic style */
+/* stylelint-disable-next-line no-descending-specificity */
+main .section.table-tournament-container h2 {
+  font-style: italic;
+  font-weight: 100;
+}
+
+/* Table section - "Full Calendar" link alignment */
+main .section.table-tournament-container > div > p:last-child {
+  text-align: right;
+  margin-top: 16px;
+}
+
+main .section.table-tournament-container > div > p:last-child a {
+  font-size: 18px;
+  font-weight: 100;
+  background-color: transparent;
+  color: var(--ta-blue);
+  padding: 0;
+  border: none;
+  text-decoration: none;
+}
+
+main .section.table-tournament-container > div > p:last-child a:hover {
+  text-decoration: underline;
+}
+
+/* Tennis blue section - "More news" button alignment */
+main .section.tennis-blue > div > p:last-child {
+  text-align: right;
+  margin-top: 16px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+main .section.tennis-blue > div > p:last-child a {
+  background-color: var(--ta-white);
+  color: var(--ta-dark-navy);
+  font-size: 14px;
+  padding: 8px 16px;
 }

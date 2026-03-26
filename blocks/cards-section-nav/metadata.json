@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-section-nav",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-03-26T04:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.tennis.com.au/nsw/clubs",
+    "originPage": "section landing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "section-navigation",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + description + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "section landing pages",
+      "category overview pages",
+      "subsection navigation grids"
+    ],
+    "notSuitableFor": [
+      "news article listings",
+      "product detail pages"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/nsw/clubs", "/nsw/players", "/nsw/our-work", "/nsw/about-us"],
+    "reuseCount": 4,
+    "lastUsed": "2026-03-26T04:10:00.000Z"
+  }
+}

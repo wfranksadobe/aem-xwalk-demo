@@ -115,6 +115,36 @@
           }
         },
         {
+          "title": "Cards News",
+          "id": "cards-news",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards News",
+                  "filter": "cards-news"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Section Nav",
+          "id": "cards-section-nav",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards Section Nav",
+                  "filter": "cards-section-nav"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Cards",
           "id": "cards",
           "plugins": {
@@ -145,6 +175,36 @@
           }
         },
         {
+          "title": "Carousel Hero Banner",
+          "id": "carousel-hero-banner",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Carousel Hero Banner",
+                  "filter": "carousel-hero-banner"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel Hero Banner Slide",
+          "id": "carousel-hero-banner-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Carousel Hero Banner Slide",
+                  "model": "carousel-hero-banner-item"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Carousel",
           "id": "carousel",
           "plugins": {
@@ -153,7 +213,6 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Carousel",
-                  "model": "carousel",
                   "filter": "carousel"
                 }
               }
@@ -291,6 +350,43 @@
                   "name": "Search",
                   "model": "search",
                   "filter": "search"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Table Tournament",
+          "id": "table-tournament",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Table Tournament",
+                  "model": "table-tournament",
+                  "filter": "table-tournament"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Row",
+          "id": "table-tournament-row",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Row",
+                  "model": "table-tournament-row",
+                  "column1text": "Start",
+                  "column2text": "End",
+                  "column3text": "Events",
+                  "column4text": "Category",
+                  "column5text": "Surface",
+                  "column6text": "Region"
                 }
               }
             }
